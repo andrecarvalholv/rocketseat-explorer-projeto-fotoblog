@@ -1,0 +1,150 @@
+/* geral */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --color-base-white: #ffffff;
+    --color-base-gray-100:#F5F5F5; 
+    --color-base-gray-300:#8D8D99;
+    --color-base-gray-500:#3D3D3D;
+    --color-base-gray-700:#202024;
+}
+
+body {
+    font-family: "Mulish", sans-serif;
+    background-color: var(--color-base-white);
+}
+
+#app {
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+    height: 100vh;
+}
+
+/* header */
+
+header {
+    display: flex;
+    align-content: center;
+    gap: 7.75rem;
+    align-items: center;
+    padding: 1.6rem 11.2rem;
+}
+
+a {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--color-base-gray-300);
+    cursor: pointer;
+}
+
+a span {
+    color: var(--color-base-gray-700);
+}
+
+#input-search {
+    width: 72rem;
+    height: 4.8rem;
+    background-color: var(--color-base-gray-100);
+    padding: 1.2rem 1.6rem;
+
+    border: none;
+    border-radius: 8px;
+
+    font-family: "Mulish", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--color-base-gray-500);
+    opacity: 0.56;
+}
+
+#img-person {
+    width: 4.2rem;
+    height: 4.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* main */
+
+main {
+    display: grid;
+    background-color: var(--color-base-gray-100);
+    overflow-y: scroll;
+    padding: 0 11.2rem;
+}
+
+h1 {
+    margin: 3.6rem 0;
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: #202024;
+}
+
+.card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 39rem);
+
+    column-gap: 3.2rem;
+    row-gap: 2.4rem;
+
+    margin-bottom: 6.4rem;
+}
+
+/* card */
+
+.card {
+    background-color: var(--color-base-white);
+    border-radius: 8px;
+}
+
+.card img {
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.card img:hover {
+    filter: hue-rotate(5deg) contrast(120%) saturate(150%);
+}
+
+.text-card {
+    padding: 2.4rem;
+}
+
+.text-card h2 {
+    font-weight: 700;
+    font-size: 2.0rem;
+    color: var(--color-base-gray-700);
+    margin-bottom: 1.2rem;
+}
+
+.text-card span {
+    background-color: var(--color-base-gray-100);
+    padding: 4px 8px;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: var(--color-base-gray-700);
+    border-radius: 8px;
+}
+
+/* footer */
+
+footer {
+    padding: 1.6rem 0;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: var(--color-base-gray-700);
+    text-align: center;
+}
+

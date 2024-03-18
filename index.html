@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotoblog</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <!-- Poderia utilizar um nav para agrupar todos-->
+            <img id="img-camera" src="./imgs/camera.svg" alt="foto camera">
+
+            <!-- Poderia utilizar um ul e li (lista) para colocar home e galeria-->
+            <a>Home</a> 
+            <a><span>Galeria</span></a> 
+
+            <!-- Poderia colocar o input dentro de uma tag form e adicionar um label para ter acessibilidade, 
+            mas colocando um overflow hidden e position relative, podendo mudar altura e largura para 1px-->
+            <input type="search" name="input-search" id="input-search" placeholder="Pesquise por imagens e coleções">
+
+            <img id="img-person" src="./imgs/pessoa.jpg" alt="foto pessoa">
+        </header>
+    
+        <main>
+            <h1>Galeria</h1>
+    
+            <div class="card-wrapper"> 
+                <!-- Ao invés de div poderia utilizar section -> figure -> img -> figcaption  -> h2 e span-->
+                <div class="card">
+                    <img class="img-card" src="./imgs/image1.svg" alt="foto galeria">
+                    <div class="text-card">
+                        <h2>Workspace elétrica</h2>
+                        <span>TAG</span>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <img class="img-card" src="./imgs/image2.svg" alt="foto galeria">
+                    <div class="text-card">
+                        <h2>Dark and red</h2>
+                        <span>TAG</span>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <img class="img-card" src="./imgs/image3.svg" alt="foto galeria">
+                    <div class="text-card">
+                        <h2>Organização e grids</h2>
+                        <span>TAG</span>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <img class="img-card" src="./imgs/image4.svg" alt="foto galeria">
+                    <div class="text-card">
+                        <h2>Colméia</h2>
+                        <span>TAG</span>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <img class="img-card" src="./imgs/image5.svg" alt="foto galeria">
+                    <div class="text-card">
+                        <h2>Setup de escritor</h2>
+                        <span>TAG</span>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <img class="img-card" src="./imgs/image6.svg" alt="foto galeria">
+                    <div class="text-card">
+                        <h2>Ergonomia e cores</h2>
+                        <span>TAG</span>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <img class="img-card" src="./imgs/image7.svg" alt="foto galeria">
+                    <div class="text-card">
+                        <h2>Show de luzes</h2>
+                        <span>TAG</span>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <img class="img-card" src="./imgs/image8.svg" alt="foto galeria">
+                    <div class="text-card">
+                        <h2>Deep purple</h2>
+                        <span>TAG</span>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <img class="img-card" src="./imgs/image9.svg" alt="foto galeria">
+                    <div class="text-card">
+                        <h2>Multi-Screen</h2>
+                        <span>TAG</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    
+        <footer>
+            © 2023 - Rocketseat Explorer
+        </footer>
+    </div>
+</body>
+</html>
